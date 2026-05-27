@@ -23,7 +23,7 @@ class Electric_Field(Scene):
             d1 = np.linalg.norm(r1)
             d2 = np.linalg.norm(r2)
 
-            #Condizipne grafica solo per non far entrare i vettori nelle cariche
+             
             if d1 < 0.25 or d2 < 0.55:
                 return np.array([0, 0, 0])
 
@@ -33,7 +33,7 @@ class Electric_Field(Scene):
             E2 = k*q2 * r2/ d2**3
             E_tot = E1 + E2
 
-            #Graficamente per visualizzare meglio i vettori: 
+            
             visualize_E_tot = E_tot/k
             
             return visualize_E_tot 
