@@ -2,7 +2,10 @@ from manim import *
 import numpy as np
 
 class Electric_Field(Scene):
-    def construct(self):
+    # Manim expects a method named "construct" to create
+    # and animate the objects in your scene.
+    # It is like the script of a theater play.
+     def construct(self):
         q = +1
         r0 = np.array([0, 0, 0])
         tint = RED if q > 0 else BLUE
