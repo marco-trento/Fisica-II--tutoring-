@@ -58,14 +58,8 @@ q = sigma * (L / N)**2            # carica di ogni puntino
 
 posizioni = []
 cariche = []
-for x in np.linspace(-L/2, L/2, N):
-    for y in np.linspace(-L/2, L/2, N):
-        # piastra positica
-        posizioni.append([x, y, +D/2])
-        cariche.append(+q)
-        # piastra negativa
-        posizioni.append([x, y, -D/2])
-        cariche.append(-q)
+# TODO riempire la griglia NxN sulle due piastr
+
 posizioni = np.array(posizioni)   # posizioni[j] = [xj, yj, zj] della carica j
 cariche = np.array(cariche)       # cariche[j]   = valore della carica j
 
